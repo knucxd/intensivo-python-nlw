@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 repos:
   - repo: local
     hooks:
@@ -13,3 +14,20 @@ repos:
             "--rcfile=.pylintrc", # Link to your config file
             "--load-plugins=pylint.extensions.docparams", # Load an extension
           ]
+=======
+repos:
+  - repo: local
+    hooks:
+      - id: pylint
+        name: pylint
+        entry: pylint
+        language: system
+        types: [python]
+        args:
+          [
+            "-rn", # Only display messages
+            "-sn", # Don't display the source
+            "--rcfile=.pylintrc", # Link to your config file
+            "--load-plugins=pylint.extensions.docparams", # Load an extension
+          ]
+>>>>>>> 9627bc1685c032518a711a142b4dcd49b62b8181
